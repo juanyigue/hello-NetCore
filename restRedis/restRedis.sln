@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6737FB84-AA2F-4B09-8DAD-A794AB4116F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9A87B525-CB33-4B0C-B906-4F0D8D49DE14}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "restRedis", "src\restRedis\restRedis.xproj", "{02E832EF-8F62-4DC7-8B7D-5267191240A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02E832EF-8F62-4DC7-8B7D-5267191240A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E832EF-8F62-4DC7-8B7D-5267191240A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E832EF-8F62-4DC7-8B7D-5267191240A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E832EF-8F62-4DC7-8B7D-5267191240A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02E832EF-8F62-4DC7-8B7D-5267191240A0} = {6737FB84-AA2F-4B09-8DAD-A794AB4116F0}
+	EndGlobalSection
+EndGlobal
