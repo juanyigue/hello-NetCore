@@ -12,7 +12,8 @@ namespace restRedis3.Connectors
 
         private ConnectionMultiplexer redisCli;
         private IDatabase db;
-        private string host = "192.168.99.100";
+        //private string host = "192.168.99.100";
+        private string host = "localhost";
         private string port = "6379";
 
         public RedisDB()
@@ -21,7 +22,7 @@ namespace restRedis3.Connectors
 
         public RedisDB(string _host, string _port)
         {
-
+            //System.Configuration.ConfigurationSettings.AppSettings("")
             //ConfigurationOptions configuration = new ConfigurationOptions();
             //configuration.AbortOnConnectFail = false;
 
