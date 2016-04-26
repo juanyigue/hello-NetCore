@@ -81,9 +81,21 @@ namespace restRedis3.Controllers
 
 
         // POST api/values
+
+        //[HttpPost]
+        //public void Post([FromBody]string value)
+        //{
+        //}
+
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Create([FromBody] CacheItem item)
         {
+            if (item == null)
+            {
+                return HttpBadRequest();
+            }
+            CacheItems.Add(item);
+            return CreatedAtRoute("GetCache", new { controller = "Cache", id = item.Key }, item);
         }
 
         // PUT api/values/5

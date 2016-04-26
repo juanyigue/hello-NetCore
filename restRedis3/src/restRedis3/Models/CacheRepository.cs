@@ -47,7 +47,8 @@ namespace restRedis3.Models
         public void Add(CacheItem item)
         {
             //item.Key = Guid.NewGuid().ToString();
-            _cacheItems[item.Key] = item;
+            //_cacheItems[item.Key] = item;
+            MyDB.SetValue(item.Key, item.Name);
         }
 
         public CacheItem Find(string theKey)
