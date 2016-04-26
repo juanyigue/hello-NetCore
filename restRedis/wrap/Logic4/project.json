@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net40": {
+      "wrappedProject": "../../Logic4/Logic4.csproj",
+      "bin": {
+        "assembly": "../../Logic4/obj/{configuration}/Logic4.dll",
+        "pdb": "../../Logic4/obj/{configuration}/Logic4.pdb"
+      }
+    }
+  }
+}

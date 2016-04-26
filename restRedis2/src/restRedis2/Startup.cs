@@ -7,9 +7,8 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using RestRedis.Models;
 
-namespace restRedis
+namespace restRedis2
 {
     public class Startup
     {
@@ -38,7 +37,6 @@ namespace restRedis
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
-            services.AddSingleton<ICacheRepository, CacheItemRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

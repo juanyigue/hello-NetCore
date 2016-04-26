@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
 
-namespace restRedis.Controllers
+
+namespace restRedis2.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
@@ -27,6 +28,7 @@ namespace restRedis.Controllers
         [HttpPost]
         public void Post([FromBody]string value)
         {
+            Clase1 a;
         }
 
         // PUT api/values/5

@@ -4,7 +4,7 @@ using TodoApi.Models;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace SimpleApi.Controllers
+namespace RestRedis.Controllers
 {
     [Route("api/todo")]
     public class TodoController : Controller

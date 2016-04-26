@@ -6,8 +6,8 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>02e832ef-8f62-4dc7-8b7d-5267191240a0</ProjectGuid>
-    <RootNamespace>restRedis</RootNamespace>
+    <ProjectGuid>a3bbd79d-6670-43fa-8d16-d448ff6efe2d</ProjectGuid>
+    <RootNamespace>restRedis2</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">..\..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
   </PropertyGroup>
@@ -15,8 +15,7 @@
     <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CacheManager\Logic.csproj" />
-    <ProjectReference Include="..\..\Logic4\Logic4.csproj" />
+    <ProjectReference Include="..\..\..\Logic\Logic\Logic\Logic.csproj" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>

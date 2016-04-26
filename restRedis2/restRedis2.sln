@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A85A8F89-A0EC-48AF-9A91-838A91EC2435}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A4EC7B1-DE84-41A1-8FFF-FC44AB8704C1}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "restRedis2", "src\restRedis2\restRedis2.xproj", "{A3BBD79D-6670-43FA-8D16-D448FF6EFE2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaLibreria", "PruebaLibreria\PruebaLibreria.csproj", "{C779A283-7D9D-473E-AA61-0BDA68F7843D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3BBD79D-6670-43FA-8D16-D448FF6EFE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3BBD79D-6670-43FA-8D16-D448FF6EFE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3BBD79D-6670-43FA-8D16-D448FF6EFE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3BBD79D-6670-43FA-8D16-D448FF6EFE2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C779A283-7D9D-473E-AA61-0BDA68F7843D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C779A283-7D9D-473E-AA61-0BDA68F7843D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C779A283-7D9D-473E-AA61-0BDA68F7843D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C779A283-7D9D-473E-AA61-0BDA68F7843D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3BBD79D-6670-43FA-8D16-D448FF6EFE2D} = {A85A8F89-A0EC-48AF-9A91-838A91EC2435}
+	EndGlobalSection
+EndGlobal

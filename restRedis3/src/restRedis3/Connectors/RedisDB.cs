@@ -12,19 +12,21 @@ namespace restRedis3.Connectors
 
         private ConnectionMultiplexer redisCli;
         private IDatabase db;
+        private string host = "192.168.99.100";
+        private string port = "6379";
 
         public RedisDB()
         {
         }
 
-        public RedisDB(string host, string port)
+        public RedisDB(string _host, string _port)
         {
 
             //ConfigurationOptions configuration = new ConfigurationOptions();
             //configuration.AbortOnConnectFail = false;
 
             //redisCli = ConnectionMultiplexer.Connect("192.168.99.100:6379,abortConnect=false,resolveDns=false,allowAdmin=true,ssl=false");
-            redisCli = ConnectionMultiplexer.Connect("192.168.99.100:6379");
+            redisCli = ConnectionMultiplexer.Connect(string.Format("{0}:{1},abortConnect=false,resolveDns=false,allowAdmin=true,ssl=false", host, port));
 
             db = redisCli.GetDatabase();
 
@@ -61,6 +63,23 @@ namespace restRedis3.Connectors
         public string GetValue(string key)
         {
             return db.StringGet(key);
+        }
+
+        public IDictionary<string, string> GetAll()
+        {
+            IServer server = redisCli.GetServer(string.Format("{0}:{1}", host, port));
+
+            IEnumerable<RedisKey> keys = server.Keys();
+            //for(int i = 0;i< keys.Count(); i++)
+            //{
+            //}
+            IDictionary<string, string> dictionary = new Dictionary<string, string>();
+            foreach (RedisKey key in keys)
+            {
+                dictionary.Add(key.ToString(), GetValue(key.ToString()));
+            }
+
+            return dictionary;
         }
 
     }

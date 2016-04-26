@@ -24,7 +24,7 @@
   "frameworks": {
     "dnx451": {
       "dependencies": {
-        "Logic4": "1.0.0-*"
+        "Logic": "1.0.0-*"
       }
     },
     "dnxcore50": { }
